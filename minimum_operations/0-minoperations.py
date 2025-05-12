@@ -6,14 +6,15 @@ Module for calculating minimum operations to achieve n 'H' characters.
 
 def minOperations(n):
     """
-    Calculates the fewest number of operations needed to result in exactly
-    n 'H' characters in the file.
+    Calculates the fewest number of operations needed to result in
+    exactly n 'H' characters in the file.
 
     Args:
         n (int): The target number of 'H' characters
 
     Returns:
-        int: The minimum number of operations, or 0 if n is impossible to achieve
+        int: The minimum number of operations, or 0 if n is impossible
+        to achieve
     """
     # If n is 1, we already have 'H', so no operations needed
     if n <= 1:
