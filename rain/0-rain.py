@@ -3,6 +3,16 @@
 Module for calculating rainwater trapped between walls.
 """
 
+"""
+0-rain module.
+
+This module contains a function to calculate the amount of rainwater
+that can be trapped between walls of different heights.
+
+The main function 'rain' takes a list of non-negative integers representing
+wall heights and returns the total units of water that would be retained
+after rainfall.
+"""
 
 def rain(walls):
     """
