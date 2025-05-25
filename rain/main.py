@@ -11,6 +11,7 @@ spec = importlib.util.spec_from_file_location(module_name, module_path)
 rain_module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(rain_module)
 
+
 def main():
     test_cases = [
         [],
@@ -33,10 +34,10 @@ def main():
         expected = expected_outputs[i]
         status = "✓" if result == expected else "✗"
         print(f"Test {i + 1}: {walls}")
-        print(f"Result: {result}, Expected: {expected} {status}")
-        print()
+        print(f"Result: {result}, Expected: {expected} {status}\n")
 
     print("All tests completed!")
+
 
 if __name__ == "__main__":
     main()
