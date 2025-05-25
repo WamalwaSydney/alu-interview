@@ -33,32 +33,3 @@ def rain(walls):
 
     return water_trapped
 
-
-if __name__ == "__main__":
-    """Test the rain function with various test cases."""
-    test_cases = [
-        [],
-        [2, 0, 2],
-        [0, 1, 0, 2, 0, 3, 0, 4],
-        [1, 1, 2, 0, 1, 1, 1],
-        [0, 2, 1, 0, 1, 3, 1, 2, 1, 1, 2, 1],
-        [2, 0, 0, 0, 0, 3, 0],
-        [1],
-        [3, 3]
-    ]
-
-    expected_outputs = [0, 2, 6, 1, 7, 8, 0, 0]
-
-    print("Running all test cases:")
-    print("-" * 40)
-
-    for i, walls in enumerate(test_cases):
-        result = rain(walls)
-        expected = expected_outputs[i]
-        status = "✓" if result == expected else "✗"
-        print(f"Test {i + 1}: {walls}")
-        print(f"Result: {result}, Expected: {expected} {status}")
-        print()
-
-    print("All tests completed!")
-
