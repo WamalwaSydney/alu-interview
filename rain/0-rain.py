@@ -1,14 +1,5 @@
 #!/usr/bin/python3
-"""
-0-rain module
-
-This module provides functionality to calculate rainwater trapping.
-Given a list of wall heights, it calculates how much water can be trapped
-between the walls after it rains.
-
-Functions:
-    rain(walls): Calculate trapped rainwater between walls
-"""
+"""Rain water trapping algorithm module."""
 
 
 def rain(walls):
