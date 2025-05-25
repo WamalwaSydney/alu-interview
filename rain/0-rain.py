@@ -3,29 +3,6 @@
 
 
 def rain(walls):
-    """
-    Calculate how many square units of water will be retained after it rains.
-
-    Given a list of non-negative integers representing the heights of walls
-    with unit width 1, calculate how much rainwater will be trapped between
-    them. Water can only be trapped if there are taller walls on both sides.
-
-    Args:
-        walls (list of int): List of non-negative integers representing 
-                           wall heights with unit width 1
-
-    Returns:
-        int: Total amount of rainwater retained in square units.
-             Returns 0 if no water can be trapped.
-
-    Example:
-        >>> rain([0, 1, 0, 2, 0, 3, 0, 4])
-        6
-        >>> rain([2, 0, 2])
-        2
-        >>> rain([])
-        0
-    """
     if not walls or len(walls) < 3:
         return 0
 
